@@ -1,0 +1,142 @@
+
+// // import ReactDOM from "react-dom/client";
+
+// // import Home from "./pages/Home";
+// // import Om from "./pages/Om";
+// // import Aktiviteter from "./pages/Aktiviteter";
+// // import Layout from "./pages/Layout";
+
+// // // import Ikon from "./components/Ikon";
+// // import Header from "./components/Header1";
+// // // import Menu from "./components/Meny1";
+// // // import GridContainer from "./components/GridContainer";
+// // // import BigContainer from "./components/BigContainer";
+
+// // import { BrowserRouter as Routes, Route, BrowserRouter } 
+// // from "react-router-dom";
+
+
+// // import './App.css';
+
+// // export default function App() {
+// //   return (
+
+// //     // <Header />
+// //     // <Om />
+
+// //     <Layout />
+
+// //     // <BrowserRouter>
+// //     //   <Routes>
+// //     //     <Route path="/" element = {<Layout />}>
+// //     //       <Route index element= {<Home />} />
+// //     //       <Route path="Om" element={<Om />} />
+// //     //       <Route path="Aktiviteter" element={<Aktiviteter />} />
+
+// //     //     </Route>
+// //     //   </Routes>
+   
+// //     // </BrowserRouter>
+
+
+// //   );
+
+// // }
+
+// // const root = ReactDOM.createRoot(document.getElementById('root'));
+// // root.render(<App />);
+
+
+// // // function App() {
+// // //   return (
+  
+// // //     <div>
+
+
+// // //       <Router> 
+       
+// // //           <Header />
+// // //           <Ikon />
+
+// // //           <Menu />
+// // //           <Routes>
+// // //             <Route path = 'Home' element={<Home/>}> </Route>
+              
+            
+// // //           </Routes>
+
+// // //           <Home />
+
+// // //       </Router>
+
+        
+     
+// // //     </div>
+
+// // //   );
+
+// // // }
+
+// // //Nåt som inte funkar som det ska här
+
+// // // function App() {
+// // //   return (
+// // //     <Router> 
+// // //       <div>     
+      
+// // //         <Routes> 
+// // //           <Route path = '/' element={<GridContainer/>} />
+// // //         {/* <Home /> */}
+// // //         {/* <Om /> */}
+// // //         </Routes>
+      
+// // //       </div>
+// // //     </Router>
+
+// // //     //eventuellt lägga in route och switch sen beronde på, gå tillbaka i videon i så fall
+// // //     // kolla på mer om routar osv! kolla tutorial och mer video sen höra av till siyu/keni eventuellt
+
+// // //   );
+
+// // // }
+
+
+
+// // // export default App;
+
+
+// import ReactDOM from "react-dom/client";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Layout from "./pages/Layout";
+// import Home from "./pages/Home";
+// import Blogs from "./pages/Blogs";
+// import Contact from "./pages/Contact";
+// import NoPage from "./pages/NoPage";
+
+// export default function App() {
+//   return (
+
+//       // <Om />
+//         <Home />
+    
+//     // <BrowserRouter>
+     
+    
+//     //   <Routes>
+//     //     <Route path="/" element={<Layout />}>
+//     //       <Route App element={<Home />} />
+//     //       <Route path="blogs" element={<Blogs />} />
+//     //       <Route path="contact" element={<Contact />} />
+//     //       <Route path="*" element={<NoPage />} />
+//     //     </Route>
+//     //   </Routes>
+//     // </BrowserRouter>
+
+
+//   );
+// }
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(<App />);
+
+      {/* <a href="/jabadabba"> Go to homepage </a> 5.40 pratar om detta, he in ovanför routes*/} 
