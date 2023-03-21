@@ -20,7 +20,7 @@ class Hitta extends React.Component {
                         <br/>
                         <Link to="/Aktiviteter"> Aktiviteter </Link>
                         <br/>
-                        <Link to="/Hitta"> Hitta hits </Link>
+                        <Link to="/Hitta"> Hitta hit </Link>
                         <br/>
                         <Link to="/Kontakt"> Kontakt </Link>  
                     </ul>    

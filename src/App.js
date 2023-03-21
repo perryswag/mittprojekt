@@ -7,8 +7,9 @@ import Om from "./pages/Om";
 import Aktiviteter from "./pages/Aktiviteter";
 import Hitta from './pages/Hitta';
 import Kontakt from './pages/Kontakt';
-import LikeButton from './LikeButton';
 import ErrorPage from "./pages/ErrorPage";
+
+import LikeButton from './LikeButton';
 
 import "./App.css";
 

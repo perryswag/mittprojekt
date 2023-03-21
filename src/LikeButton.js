@@ -12,12 +12,9 @@ function LikeButton() {
                 className={`like-button ${liked ? 'liked' : ''}`}
 
                 onClick={() => {
-
                     setLikes(likes + 1);
-                    setLiked(true);
-                
-                }}
-                    
+                    setLiked(true); 
+                }}        
             > 
                 {likes} Gnägg!
             </button>
