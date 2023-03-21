@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap&family=Merriweather:wght@400;700');
 
 
+
 body{
     background-image: url(img/bakgrund.jpeg); 
     background-repeat: no-repeat;
@@ -20,7 +21,6 @@ body{
     margin-left: 3%;
     margin-right: 3%;
     margin-bottom: 3%;
-
 }
 
 .header{
@@ -112,6 +112,7 @@ a {
     z-index: 1;
     opacity: 0.75;     
     border-radius: 25px;
+    
 }
 
 .meny ul {
@@ -120,7 +121,7 @@ a {
    padding: 30px;
    text-align: center;
    letter-spacing: 1px;
-   line-height: 3;     
+   line-height: 3;   
 }
 
 .meny a {
@@ -267,6 +268,70 @@ img.bildHorse {
 }
 
 /* Om */
+.big-container-om {
+    display: grid;
+    grid-template-areas:
+    'ikon headern'
+    'menyn grid-container-om '
+    'menyn grid-container-om ' ;
+    gap: 20px;
+    margin-top:0px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+}
+
+.grid-container-om {
+    grid-area: grid-container-om;
+    top: 200px;
+    display: grid;
+    height: fit-content;
+
+    grid-template-areas:
+    'bildMariaOm textMariaOm textMariaOm'
+    'textHorseOm textHorseOm  textHorseOm'  
+    'bildLo  bildHelge  bildHorse1'
+    'sluttext sluttext sluttext';  
+    
+    background: rgb(255, 255, 255, 0.75);
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.grid-container-om > div {
+    box-sizing: border-box;
+    margin: 5%;
+    display: inline-block;   
+ }
+
+.bildMariaOm {
+    grid-area: bildMariaOm;
+    width:100%; 
+}
+
+img.bildMariaOm {
+    object-fit: cover;
+    border-radius: 50%; 
+}
+
+.textMariaOm {
+    grid-area: textMariaOm;
+    box-sizing: border-box;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+}
+
+.textHorseOm{
+    grid-area: textHorseOm; 
+    box-sizing: border-box; 
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+}
+
 .polaroid {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -322,9 +387,187 @@ img.bildHorse1 {
     overflow: hidden; 
 } 
 
+.sluttext {
+    grid-area:sluttext;
+    text-align: center; 
+}
+
+/* Aktiviteter */
+
+.big-container-aktiviteter {
+    display: grid;
+    grid-template-areas:
+    'ikon headern'
+    'menyn grid-container-aktiviteter '
+    'menyn grid-container-aktiviteter ' ;
+    gap: 20px;
+    margin-top:0px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+}
+
+.grid-container-aktiviteter {
+    grid-area: grid-container-aktiviteter;
+    top: 200px;
+    display: grid;
+    height: fit-content;
+
+    grid-template-areas:
+    'bildTur textTur textTur'  
+    'textTur2 textTur2 bildTur2'
+    'pris pris pris'
+    'knapp knapp knapp' ; 
+    
+    background: rgb(255, 255, 255, 0.75);
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.grid-container-aktiviteter > div {
+    box-sizing: border-box;
+    margin: 5%;
+    display: inline-block;   
+ }
+
+ .textTur {
+    grid-area: textTur;
+    box-sizing: border-box;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+}
+
+bildTur {
+    grid-area: bildTur;
+}
+
+.bildTur2 {
+    grid-area: bildTur2;   
+    margin-right: 50px;  
+}
+
+.textTur2 {
+    grid-area: textTur2;
+    box-sizing: border-box;
+    text-align: center;
+
+    align-self: center;          
+}
+
+.tabell {
+    grid-area: pris;
+    font-family: 'Merriweather', serif; 
+}
+
+table {
+    border: 3px solid rgb(124,60,28);
+    background-color: white;   
+    margin-left: auto;
+    margin-right: auto;   
+    width: 50%;
+    text-align: center; 
+    border-radius: 5px;
+}
+
+th {
+    padding: 5px;
+    color: white;
+    border: 0.6px solid black;
+    background-color: rgb(124,60,28);
+}
+
+td {
+    padding: 10px;
+    color: black;
+    border: 0.6px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(140,98,49, 0.8); 
+}
+
+.knapp {
+    grid-area: knapp;
+}
 
 
-/* Boka */ 
+
+/* Kontakt */ 
+
+.big-container-kontakt {
+    display: grid;
+    grid-template-areas:
+    'ikon headern'
+    'menyn grid-container-kontakt '
+    'menyn grid-container-kontakt ' ;
+    gap: 20px;
+    margin-top:0px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    
+}
+
+.grid-container-kontakt {
+    grid-area: grid-container-kontakt;
+    top: 200px;
+    display: grid;
+    height: fit-content;
+
+    grid-template-areas:
+    'textBoka textBoka'
+    'form bildBoka' 
+    'form bildBoka2' ;  
+    
+    background: rgb(255, 255, 255, 0.75);
+    border-radius: 25px;
+    box-sizing: border-box;
+
+    width: 1119px;
+}
+
+.grid-container-kontakt > div {
+    box-sizing: border-box;
+    margin: 5%;
+    display: inline-block;   
+ }
+
+ .form {
+    grid-area: form;
+    font-size: 14px;
+    font-family: 'Merriweather', serif;  
+    padding: 20px;
+    border-color: black;
+    border-style: dotted;
+    background-color: rgb(140,98,49); 
+    border-radius: 5px;
+    
+}  
+.textBoka {
+    grid-area: textBoka;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.bildBoka {
+    grid-area: bildBoka;
+    margin: 15px;
+    width: fit-content;
+    height: fit-content;
+            
+}
+.bildBoka2 {
+    grid-area: bildBoka2;
+    margin: 15px;
+    width: fit-content;
+    height: fit-content;                
+}
+
+
+
+
 label {
     padding: 10px 10px 10px 0px;  
     display: inline-block;
@@ -385,38 +628,88 @@ img.bildTur2 {
     border-radius: 50%; 
 }
 
-.tabell {
-    grid-area: pris;
-    font-family: 'Merriweather', serif; 
-}
 
-table {
-    border: 3px solid rgb(124,60,28);
-    background-color: white;   
-    margin-left: auto;
-    margin-right: auto;   
-    width: 50%;
-    text-align: center; 
-}
-
-th {
-    padding: 5px;
-    color: white;
-    border: 0.6px solid black;
-    background-color: rgb(124,60,28);
-}
-
-td {
-    padding: 10px;
-    color: black;
-    border: 0.6px solid black;
-}
-
-tr:nth-child(even) {
-    background-color: rgb(140,98,49, 0.8); 
-}
 
 /*Hitta hit*/
-iframe {
-    border: 0px;
+
+.big-container-hitta {
+    display: grid;
+    grid-template-areas:
+    'ikon headern'
+    'menyn grid-container-hitta '
+    'menyn grid-container-hitta ' ;
+    gap: 20px;
+    margin-top:0px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
 }
+
+.grid-container-hitta {
+    grid-area: grid-container-hitta;
+    top: 200px;
+    display: grid;
+    height: fit-content;
+
+    grid-template-areas:
+    'textHitta textHitta'
+    'karta karta';   
+    
+    background: rgb(255, 255, 255, 0.75);
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.grid-container-hitta > div {
+    box-sizing: border-box;
+    margin: 5%;
+    display: inline-block;   
+ }
+
+
+ .karta {
+    grid-area: karta;
+    margin: 5%;
+}
+
+iframe {    
+    width: 100%;
+    height: 500px;
+    border: none;                     
+}
+
+.karta > textHitta {
+    grid-area: textHitta;
+    text-align: center;        
+} 
+
+/*Captcha*/
+
+
+.input{
+    width: 295px;
+    height: 30px;
+    border: rgb(122, 195, 238) 2px solid;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 3px;
+  }
+  
+  .input:focus{
+    border: none;
+  }
+  
+  label{
+    display: block;
+    margin-bottom: 2px;
+    
+  }
+  
+  button{
+    padding: 7px;
+    margin-top: 5px;
+    width: 300px;
+    background-color: rgb(122, 195, 238);
+    border: none;
+    border-radius: 4px;
+  }

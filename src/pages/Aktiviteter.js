@@ -1,10 +1,11 @@
 import React from "react";
+import {Link } from 'react-router-dom';
 
 class Aktiviteter extends React.Component {
     render() {
         return (
 
-            <div class = "big-container">
+            <div class = "big-container-aktiviteter">
 
                 <div class="header">            
                     <h1>HÅKNÄS HÄSTBRUK </h1>                   
@@ -12,15 +13,17 @@ class Aktiviteter extends React.Component {
                 </div>
 
                 <div class="meny">
-                
                     <ul>
-                        <li><a href="./index.html">START</a></li>
-                        <li><a href="./om.html">OM</a></li>
-                        <li><a href="./kontakt.html">KONTAKT</a></li>
-                        <li><a href="./aktiviteter.html">AKTIVITETER</a></li>
-                        <li><a href="./hitta_hit.html">HITTA HIT</a></li>
-                        <li><a href="./shuffle.html">MEMORY</a></li>                               
-                    </ul>          
+                        <Link to="/"> Start </Link>
+                        <br/> 
+                        <Link to="/om"> Om </Link> 
+                        <br/>
+                        <Link to="/Aktiviteter"> Aktiviteter </Link> 
+                        <br/>
+                        <Link to="/Hitta"> Hitta hit </Link> 
+                        <br/>
+                        <Link to="/Kontakt"> Kontakt </Link> 
+                    </ul>    
                 </div>
 
                 <div class="ikon"> 
@@ -29,7 +32,7 @@ class Aktiviteter extends React.Component {
 
         
 
-                <div class="grid-container">
+                <div class="grid-container-aktiviteter">
                     
                     <div class="bildTur">
                         <img class="bildTur" src={require("../img/vintertur.jpeg")} alt="Hästar på vintertur"/>  
@@ -42,15 +45,15 @@ class Aktiviteter extends React.Component {
                             Ta en ridtur i den norrländska naturen och upplev årstidernas växlingar från hästryggen.
                         </p> 
                         <br/>
-                        <p> Halvdagstur: </p>
+                        <p style={{fontWeight: "bolder"}}> Halvdagstur: </p>
 
                         <p>Turen tar ca 4 timmar, inkl. fikapaus som vi tar vid en liten vacker sjö i skogen.
                         </p>
-                        <p> Heldagstur: </p>
+                        <p style={{fontWeight: "bolder"}} > Heldagstur: </p>
                         <p>Turen tar ca 7 timmar, inkl. pauser för lunch och fika.
                         </p>
                         <br/>
-                        <p> Halv- och Heldagsturen förutsätter viss ridvana - dvs. att man kan rida lätt och
+                        <p style={{fontStyle: "italic"}}> Halv- och Heldagsturen förutsätter viss ridvana - dvs. att man kan rida lätt och
                             hänga med i trav och galopp.
                         </p>
     
@@ -70,7 +73,7 @@ class Aktiviteter extends React.Component {
                             Gruppturer passar för grupper mellan 10–25 personer.
                         </p>
                         <br/>
-                        <p>Slädturer: </p>
+                        <p style={{fontWeight: "bolder"}}>Slädturer: </p>
                         <p>
                             Ta med hela familjen på vinteräventyr, nerbäddade 
                             i renskinn i den norrländska naturen.
@@ -83,7 +86,7 @@ class Aktiviteter extends React.Component {
                     </div>  
 
                     <div class="tabell">
-                        <h4>Priser</h4>
+                        <h4 style={{textAlign: "center", fontSize: "18px"}} >Priser</h4>
 
                         <table>
                             <tr>

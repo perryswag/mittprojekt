@@ -1,15 +1,12 @@
 import React from "react";
 import {Link } from 'react-router-dom';
 
+
 class Om extends React.Component { 
     render() {
         return (
 
-            
-
-            <div class = "big-container">
-
-            
+            <div class = "big-container-om">
 
                 <div class="header">             
                     <h1>HÅKNÄS HÄSTBRUK</h1> 
@@ -18,25 +15,29 @@ class Om extends React.Component {
 
                 <div class="meny">
                     <ul>
-                        
+                        <Link to="/"> Start </Link>
+                        <br/> 
+                        <Link to="/om"> Om </Link> 
                         <br/>
-                        <Link to="/Aktiviteter"> Aktiviteter </Link>  
-                        <Link to="/"> Home </Link>
-                        <Link to="/om"> Om </Link>                           
-                    </ul>                  
+                        <Link to="/Aktiviteter"> Aktiviteter </Link>
+                        <br/>
+                        <Link to="/Hitta"> Hitta hit </Link> 
+                        <br/>
+                        <Link to="/Kontakt"> Kontakt </Link>  
+                    </ul>    
                 </div>
 
                 <div class="ikon"> 
                     <img class = "horsie" src={require("../img/hastikon.jpeg")} alt="Ikon föreställande en tecknad häst"/>               
                 </div>   
 
-                <div class="grid-container">
+                <div class="grid-container-om">
                     
-                    <div class="bildMaria">
-                        <img class="bildMaria" src={require("../img/sommar.jpeg")} alt="Sommartur med flera hästar"/>  
+                    <div class="bildMariaOm" >
+                        <img class="bildMariaOm" src={require("../img/sommar.jpeg")} alt="Sommartur med flera hästar"/>  
                     </div>
 
-                    <div class = "textMaria">                                              
+                    <div class = "textMariaOm">                                              
                         <h3> Det här är Håknäs Hästbruk!  </h3>
                         <p> Håknäs Hästbruk ordnar turridning i den norrländska naturen.
                             Vi rider efter skogsvägar och stigar. Ridningen sker på nordsvenska
@@ -50,7 +51,7 @@ class Om extends React.Component {
                         </p>                     
                     </div>                 
                     
-                    <div class="textHorse">
+                    <div class="textHorseOm">
                         <h3> Hästarna  </h3>
                         <p>
                             Här är dom alla gosarna!! Åhh vad gosiga dom är. Jag förstår
@@ -98,18 +99,18 @@ class Om extends React.Component {
                             Kolla in det här häftet! </a>
                             </h4>
 
-                            <p> Visste du att det finns ett Memory med alla godingar på gården?
+                            {/* <p> Visste du att det finns ett Memory med alla godingar på gården?
                                 <br/>
                                 Klicka <a href="./shuffle.html">här</a> för att komma dit direkt eller 
                                 klicka på knappen nedan för en liten teaser.
-                            </p>
+                            </p> */}
 
-                            <div class = "knappTeaser"> 
+                            {/* <div class = "knappTeaser"> 
                                 <button> TEASER </button>
                             </div>
 
-                            {/* <div class="memBild"> 
-                                <img src={require("../img/memory.jpeg")}/>
+                            <div class="memBild"> 
+                                <img src={require("../img/memory.png")}/>
                             </div> */}
 
                     </div>

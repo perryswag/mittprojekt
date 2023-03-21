@@ -1,10 +1,57 @@
 import React from "react";
+import {Link } from 'react-router-dom';
+// import Recaptcha from 'react-recaptcha';
+
 
 
 class Home extends React.Component {
+
+    // constructor(props) {
+    //     super(props)
+
+    //     this.handleSubscribe = this.handleSubscribe.bind(this);
+    //     this.state = {
+    //         isVerified: false
+    //     }
+    // }
+
+    // handleSubscribe() {
+    //     if (this.state.isVerified) {
+    //         alert('Success??');
+    //     } else {
+    //         alert('kom igen visa att du inte är robot');
+    //     }
+    // }
+
+
     render() {
         return (
 
+            <div class = "big-container">
+
+
+                <div class="header">            
+                    <h1>HÅKNÄS HÄSTBRUK </h1>                   
+                    <h2>-Hästäventyr för hela familjen!</h2>                   
+                </div>
+
+                <div class="ikon"> 
+                    <img class = "horsie" src={require("../img/hastikon.jpeg")} alt="Ikon föreställande en tecknad häst"/>               
+                </div>  
+
+                <div class="meny">
+                    <ul>
+                        <Link to="/"> Start </Link>
+                        <br/> 
+                        <Link to="/om"> Om </Link> 
+                        <br/>
+                        <Link to="/Aktiviteter"> Aktiviteter </Link> 
+                        <br/>
+                        <Link to="/Hitta"> Hitta hit </Link>
+                        <br/>
+                        <Link to="/Kontakt"> Kontakt </Link>
+                    </ul>    
+                </div>
             
 
                 <div class="grid-container">
@@ -96,9 +143,7 @@ class Home extends React.Component {
 
                 </div>
 
-        
-
-
+            </div>
 
         )
     }
