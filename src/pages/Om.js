@@ -1,7 +1,6 @@
 import React from "react";
 import {Link } from 'react-router-dom';
 
-
 class Om extends React.Component { 
     render() {
         return (
@@ -69,26 +68,25 @@ class Om extends React.Component {
                     
                     <div class="polaroid">
                         <img class="bildLo" src={require("../img/lo.jpeg")} alt="Hästen Lo"/>
-                        
-                            <p>Lo </p>
-                            <h6> En riktig queen, Håknäs drottning! </h6>
+    
+                        <p>Lo </p>
+                        <h6> En riktig queen, Håknäs drottning! </h6>
                         
                     </div>
 
                     <div class="polaroid">
                         <img class="bildHelge" src={require("../img/helge.jpeg")} alt="Hästen Helge"/>                
-                            <p>Helge</p>
-                            <h6> Döpt efter skogens konung. 
-                            </h6>                   
+                        <p>Helge</p>
+                        <h6> Döpt efter skogens konung. 
+                        </h6>                   
                     </div>
 
                     <div class="polaroid">
                         <img class="bildHorse1" src={require("../img/hastar1.jpeg")} alt="Hästarna Jeff och Barnabas"/>                    
-                            <p>Jeff och Barnabas</p>
-                            <h6> Här är grabbarna, ansiktena lite gömda i bild pga GDPR.
-                                No paparazzi. 
-                            </h6> 
-                        
+                        <p>Jeff och Barnabas</p>
+                        <h6> Här är grabbarna, ansiktena lite gömda i bild pga GDPR.
+                            No paparazzi. 
+                        </h6>  
                     </div>
 
                     <div class = "sluttext"> 
@@ -97,31 +95,13 @@ class Om extends React.Component {
                             <br/>
                             <a href="https://www.arla.se/49a07a/globalassets/old/global/aktuellt/minior/290/hastboken_low.pdf">     
                             Kolla in det här häftet! </a>
-                            </h4>
-
-                            {/* <p> Visste du att det finns ett Memory med alla godingar på gården?
-                                <br/>
-                                Klicka <a href="./shuffle.html">här</a> för att komma dit direkt eller 
-                                klicka på knappen nedan för en liten teaser.
-                            </p> */}
-
-                            {/* <div class = "knappTeaser"> 
-                                <button> TEASER </button>
-                            </div>
-
-                            <div class="memBild"> 
-                                <img src={require("../img/memory.png")}/>
-                            </div> */}
-
+                        </h4>
                     </div>
 
                 </div>
 
             </div>
-
-            
-
-            
+ 
         )
 
     }

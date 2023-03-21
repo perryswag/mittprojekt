@@ -126,9 +126,9 @@ class Aktiviteter extends React.Component {
 
                     <div class="bokningsKnapp"> 
                         <h5> Hör av dig för att boka en tur! </h5> 
-                        <a href="./kontakt.html" class = "button"> 
-                            KONTAKTA OSS!
-                        </a>
+                        
+                        <Link to="/Kontakt" class = "button"> KONTAKTA OSS! </Link>
+                            
                     </div>
 
                 </div>
