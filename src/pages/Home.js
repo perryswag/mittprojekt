@@ -4,6 +4,11 @@ import {Link } from 'react-router-dom';
 
 
 
+
+
+
+
+
 class Home extends React.Component {
 
     // constructor(props) {
@@ -26,6 +31,8 @@ class Home extends React.Component {
 
     render() {
         return (
+
+           
 
             <div class = "big-container">
 
@@ -139,6 +146,9 @@ class Home extends React.Component {
                         <a href="./kontakt.html" class = "button"> 
                             KONTAKTA OSS!
                         </a>
+
+                        
+
                     </div>
 
                 </div>

@@ -701,15 +701,47 @@ iframe {
   
   label{
     display: block;
-    margin-bottom: 2px;
-    
+    margin-bottom: 2px; 
   }
-  
-  button{
-    padding: 7px;
-    margin-top: 5px;
-    width: 300px;
-    background-color: rgb(122, 195, 238);
-    border: none;
-    border-radius: 4px;
+
+  /* Gillat */
+  .gillat {
+    background-color: rgb(233,162,80, 0.75);
+    padding: 1%;
   }
+
+  like-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; 
+ }
+ 
+ .like-button {
+    border: none; 
+    outline: none;
+    background-color: #7d3c1a;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Patrick Hand',cursive;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    padding: 10px 20px;
+    border: 3px dotted rgb(233,162,80);;
+    border-radius: 5px;
+
+    margin-left: 50%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+ }
+
+ .like-button:hover {
+    color: rgb(233,162,80);
+    background-color: gold; /*fixa trixa här dårå*/
+ }
+ .like-button.liked {
+    color: #7d3c1a;
+    border-color: #7d3c1a;
+    background-color: rgb(233,162,80);
+ }
